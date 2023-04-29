@@ -1,7 +1,12 @@
+body {
+	background-color: #222222;
+}
+
 #calculator {
+	background-color: #111111;
 	border: 5px solid #005577;
-	width: 400px;
-	height: 500px;
+	width: 350px;
+	height: 550px;
 	margin: 0 auto;
 	padding: 5px;
 	border-radius: 20px;
@@ -9,16 +14,23 @@
 
 
 #display {
+	background-color: #FFA07A;
 	text-align: right;
-	font-size: 20px;
+	font-size: 50px;
 	font-family: sans-serif, Arial, Helvetica;
 	align-items: center;
 	border: 2px solid #005577;
 	height: 100px;
 	padding: 5px;
 	border-radius: 10px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin: 20px 5px 20px 5px;
+}
+
+#hist {
+	font-size: 30px;
+}
+
+#expr {
 }
 
 
@@ -26,14 +38,27 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	align-items: center;
-	height: 300px;
-	padding: 5px;
-	gap: 1px;
+	margin: 100px 5px 0px 5px;
+	height: 280px;
+	gap: 5px;
 }
 
 .item {
+	background-color: #191970;
+	color: #ccccee;
 	border: 2px solid #005577;
 	font-size: 30px;
 	font-family: sans-serif, Arial, Helvetica;
-	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #005577;
+	border-radius: 10px;
+	height: 45px;
 }
+
+
+.item:active {
+	  background-color: #555555;
+  }
+
